@@ -4,7 +4,6 @@ import dayjs from 'dayjs';
 import Image from 'next/image';
 import Head from 'next/head';
 import Breadcrumb from '../../components/Breadcrumb';
-import Script from 'next/script';
 
 export default function BlogPage({ page }) {
 
@@ -29,10 +28,10 @@ export default function BlogPage({ page }) {
         <meta property="og:image:height" content="630" />
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <Script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></Script>
-        <Script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></Script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
       </Head>
-      <div className="h-[250px] relative" style={{ backgroundImage: 'url(' + page.decorativeImage + ')' }}>
+      <div className="h-[250px] relative bg-cover bg-center" style={{ backgroundImage: 'url(' + page.decorativeImage + ')' }}>
         {page.decorativeImageCredits ? <div dangerouslySetInnerHTML={{ __html: page.decorativeImageCredits }} className="creditbox bg-white/80 dark:bg-black/80 absolute bottom-0 right-0 py-2 px-3 text-sm"></div> : ''}
       </div>
       <div className="max-w-5xl mx-auto px-4-px">
