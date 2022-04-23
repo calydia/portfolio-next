@@ -167,6 +167,16 @@ p {
   background-size: 65px auto;
 }
 
+.logo--tailwindcss a {
+  background-image: url('/logos/tailwindcss.svg');
+  background-size: 60px auto;
+  height: 70px;
+  width: 70px;
+}
+.logo--tailwindcss a:hover {
+  background-size: 65px auto;
+}
+
 .logo--vscode a {
   background-image: url('/logos/vscode.svg');
   background-size: 40px auto;
