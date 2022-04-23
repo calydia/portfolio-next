@@ -99,7 +99,7 @@ export default function BlogPage({ page }) {
             return (
               <a key={`gallery-item-${index}`} data-fancybox="gallery" href={image.url} data-caption={image.alt} className="focus:outline-offset-4 focus:outline-lt-purple dark:focus:outline-wheat">
                 <Image
-                  src={image.url}
+                  src={image.thumb}
                   alt={image.alt}
                   width={400}
                   height={400}
