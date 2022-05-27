@@ -157,22 +157,24 @@ p {
   background-size: 55px auto;
 }
 
-.logo--next a {
+[class*="logo--next"] a {
   background-image: url('/logos/nextjs.svg');
   background-size: 60px auto;
   height: 70px;
   width: 70px;
 }
-.logo--next a:hover {
+[class*="logo--next"] a:hover {
   background-size: 65px auto;
 }
 
+.logo--tailwind a,
 .logo--tailwindcss a {
   background-image: url('/logos/tailwindcss.svg');
   background-size: 45px auto;
   height: 70px;
   width: 70px;
 }
+.logo--tailwind a:hover,
 .logo--tailwindcss a:hover {
   background-size: 50px auto;
 }
