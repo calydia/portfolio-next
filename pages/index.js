@@ -48,6 +48,7 @@ export async function getStaticProps() {
   return {
     props: {
       page: result.data.portfolioPage,
-    }
+    },
+    revalidate: 60
   };
 }

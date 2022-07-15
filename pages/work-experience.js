@@ -87,6 +87,7 @@ export async function getStaticProps() {
   return {
     props: {
       experiences: result.data.experiences,
-    }
+    },
+    revalidate: 60
   };
 }

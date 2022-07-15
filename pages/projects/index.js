@@ -112,6 +112,7 @@ export async function getStaticProps() {
     props: {
       page: result.data.portfolioPage,
       projects: projects.data.projects
-    }
+    },
+    revalidate: 60
   };
 }

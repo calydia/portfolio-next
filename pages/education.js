@@ -110,6 +110,7 @@ export async function getStaticProps() {
     props: {
       page: result.data.portfolioPage,
       courses: courses.data.courses
-    }
+    },
+    revalidate: 60
   };
 }
