@@ -48,7 +48,7 @@ export default function Home({ page, projects }) {
                 </h2>
                 <div className="text-lg leading-normal" dangerouslySetInnerHTML={{ __html: node.contentSummary }}></div>
                 {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
-                <ul role="list" className="logo-list">
+                <ul role="list" className="logo-list" aria-label="List of technologies used in the project, visit the links to find out more about the technologies.">
                   {node.technologies.map((tech, index) => {
                     return (
                       <li key={`tech-item${index}`} className={`logo-list--item logo--${tech.name.toLowerCase()}`}>
