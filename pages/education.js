@@ -2,6 +2,7 @@ import { gql } from '@apollo/client';
 import { client } from '../lib/apollo';
 import Head from 'next/head';
 import dayjs from 'dayjs';
+import Breadcrumb from '../components/Breadcrumb';
 
 export default function Home({ page, courses }) {
 
@@ -42,6 +43,7 @@ export default function Home({ page, courses }) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Head>
+      <Breadcrumb current={page.title} />
       <h1 id="skip-target" className="block font-bold my-8 lg:mt-16 text-4xl md:text-5xl text-lt-gray dark:text-white">
         { page.title }
       </h1>
