@@ -48,7 +48,7 @@ h4 {
 }
 
 p {
-  @apply my-5 leading-normal;
+  @apply my-6 leading-relaxed;
 }
 
 .creditbox a,
