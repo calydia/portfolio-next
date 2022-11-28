@@ -26,8 +26,8 @@ const Breadcrumb = ({ current, extraLevel, extraLevelName, extraLevelPath }) => 
             <span className="mx-2">/</span>
           </li>
         : null }
-        <li>
-          <span aria-current="page">{ current }</span>
+        <li aria-current="page">
+          { current }
         </li>
       </ul>
     </nav>
