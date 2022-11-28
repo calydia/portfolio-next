@@ -47,10 +47,7 @@ export default function Home({ experiences }) {
                   {node.companyLink.map((company, index) => {
                     return (
                       <Link key={`company-${index}`} href={ company.uri }>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a>
                         { company.title }
-                        </a>
                       </Link>
                     );
                   })}

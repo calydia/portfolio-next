@@ -38,12 +38,11 @@ export default function Home({ page, projects }) {
             <li key={`list-item${index}`} className="relative my-8 p-4 pb-10 lg:my-12 lg:p-16 bg-cover" style={{ backgroundImage: 'url(' + node.decorativeImage + ')' }}>
               <article className="border-4 gradient-border-light dark:gradient-border-dark mx-auto bg-lt-blue-light dark:text-white dark:bg-dk-purple max-w-2xl p-8-px">
                 <h2 className="mb-8">
-                <Link key={`company-${index}`} href={`/projects/${node.slug}`}>
-                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                  <a className="
+                <Link key={`company-${index}`} href={`/projects${node.slug}`} className="
                     font-bold underline underline-offset-8 decoration-2 text-lt-gray dark:text-white
                   hover:text-lt-purple hover:decoration-4 dark:hover:text-wheat
-                  focus:text-lt-purple dark:focus:text-wheat focus:outline-2 focus:outline-offset-8 focus:no-underline focus:outline-black dark:focus:outline-white">{node.title}</a>
+                  focus:text-lt-purple dark:focus:text-wheat focus:outline-2 focus:outline-offset-8 focus:no-underline focus:outline-black dark:focus:outline-white">
+                 {node.title}
                 </Link>
                 </h2>
                 <div className="text-lg leading-normal" dangerouslySetInnerHTML={{ __html: node.contentSummary }}></div>
@@ -54,8 +53,7 @@ export default function Home({ page, projects }) {
                       <li key={`tech-item${index}`} className={`logo-list--item logo--${tech.name.toLowerCase()}`}>
                         { tech.url ?
                           <Link key={`company-${index}`} href={tech.url}>
-                          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a>{ tech.name }</a>
+                            { tech.name }
                           </Link>
                         : null }
                       </li>

@@ -241,3 +241,12 @@ p {
 .linkedin-link:hover {
     background-size: 34px 34px;
   }
+
+.non-active-link {
+  @apply text-black dark:text-white
+}
+
+a[aria-current=true],
+.active-link {
+  @apply underline decoration-2 underline-offset-4 text-lt-purple dark:text-dk-blue-light
+}
