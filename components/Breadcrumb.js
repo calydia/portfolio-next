@@ -13,20 +13,20 @@ const Breadcrumb = ({ current, extraLevel, extraLevelName, extraLevelPath }) => 
           >
             Home
           </Link>
+          <span className="mx-2">/</span>
         </li>
         {extraLevel ? 
           <li>
-            <span className="mx-2">/</span>
             <Link href={ extraLevelPath } className="
               underline underline-offset-4 decoration-2 text-lt-blue-dark dark:text-dk-blue-light
             hover:text-lt-purple hover:decoration-4 dark:hover:text-wheat
             focus:text-lt-purple dark:focus:text-wheat focus:outline-2 focus:outline-offset-8 focus:no-underline focus:outline-lt-purple dark:focus:outline-wheat">
                 { extraLevelName }
             </Link>
+            <span className="mx-2">/</span>
           </li>
         : null }
         <li>
-          <span className="mx-2">/</span>
           <span aria-current="page">{ current }</span>
         </li>
       </ul>
