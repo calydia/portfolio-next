@@ -41,7 +41,7 @@ export default function Home({ page, listing }) {
                     <li key={`list-item${index}`} className="grid items-stretch p-2 border-solid border-4 gradient-border-light bg-lt-blue-light text-lt-gray
                     dark:gradient-border-dark dark:bg-dk-purple dark:text-white
                     ">
-                      <a key={index} href={`/${node.category.toLowerCase()}${node.slug}`} className="post-link border-2 border-transparent focus:outline focus:outline-4 focus:outline-offset-15	focus:outline-black dark:focus:outline-white hover:border-lt-purple dark:hover:border-dk-blue-light">
+                      <a key={index} href={`https://blog.sanna.ninja/${node.category.toLowerCase()}${node.slug}`} className="post-link border-2 border-transparent focus:outline focus:outline-4 focus:outline-offset-15	focus:outline-black dark:focus:outline-white hover:border-lt-purple dark:hover:border-dk-blue-light">
                         <Image
                           src={node.listingImage}
                           alt=""
