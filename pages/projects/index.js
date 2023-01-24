@@ -42,7 +42,7 @@ export default function Home({ page, projects }) {
                     font-bold underline underline-offset-8 decoration-2 text-lt-gray dark:text-white
                   hover:text-lt-purple hover:decoration-4 dark:hover:text-wheat
                   focus:text-lt-purple dark:focus:text-wheat focus:outline-2 focus:outline-offset-8 focus:no-underline focus:outline-black dark:focus:outline-white">
-                 {node.title}
+                  {node.title}
                 </Link>
                 </h2>
                 <div className="text-lg leading-normal" dangerouslySetInnerHTML={{ __html: node.contentSummary }}></div>
