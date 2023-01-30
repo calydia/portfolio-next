@@ -63,7 +63,7 @@ p {
 }
 
 .logo-list {
-  @apply flex flex-wrap flex-row justify-around items-center list-none my-8 p-0 bg-lt-code-bg dark:bg-white
+  @apply flex flex-wrap flex-row gap-1 items-center list-none my-8 p-0 bg-lt-code-bg dark:bg-white
 }
 
 .logo-list--item a {
@@ -177,6 +177,13 @@ p {
 .logo--tailwind a:hover,
 .logo--tailwindcss a:hover {
   background-size: 50px auto;
+}
+
+.logo--iaap-was a {
+  background-image: url('/logos/iaap-web-accessibility-specialist-was.png');
+}
+.logo--iaap-was a:hover {
+  background-size: 55px auto;
 }
 
 .logo--vscode a {
