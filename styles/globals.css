@@ -27,8 +27,7 @@ body.dark {
 
 .dark .logo-dark,
 .light .logo-light {
-  display: none;
-  visibility: hidden;
+  @apply hidden invisible;
 }
 
 .post-link:hover .post-title {
