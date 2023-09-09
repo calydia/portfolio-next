@@ -12,7 +12,7 @@ export default function Home({ page, listing }) {
     <main className="max-w-5xl mx-auto px-4-px">
       <Head>
         <title>{`${page.title} | ${siteName}`}</title>
-        <meta name="Description" content={page.metaDescription} />
+        <meta name="description" content={page.metaDescription} />
         <meta
           property="og:description"
           content={page.metaDescription}

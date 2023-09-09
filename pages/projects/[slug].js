@@ -16,7 +16,7 @@ export default function BlogPage({ page }) {
         <Script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></Script>
       <Head>
         <title>{`${page.title} | ${siteName}`}</title>
-        <meta name="Description" content={page.metaDescription} />
+        <meta name="description" content={page.metaDescription} />
         <meta
           property="og:description"
           content={page.metaDescription}

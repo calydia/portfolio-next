@@ -15,7 +15,7 @@ export default function Home({ experiences }) {
     <main className="max-w-5xl mx-auto px-4-px">
       <Head>
         <title>{`${pageTitle} | ${siteName}`}</title>
-        <meta name="Description" content={ experienceMetaDescription } />
+        <meta name="description" content={ experienceMetaDescription } />
         <meta
           property="og:description"
           content={ experienceMetaDescription }
