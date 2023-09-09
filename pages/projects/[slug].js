@@ -1,19 +1,18 @@
 import { gql } from '@apollo/client';
 import { client } from '../../lib/apollo';
-import dayjs from 'dayjs';
 import Image from 'next/image';
 import Head from 'next/head';
 import Breadcrumb from '../../components/Breadcrumb';
 import Script from 'next/script';
 
-export default function BlogPage({ page }) {
+export default function ProjectPage({ page }) {
 
   const siteName = 'Portfolio - Sanna Mäkinen';
 
   return (
     <main>
       <Script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></Script>
-        <Script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></Script>
+      <Script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></Script>
       <Head>
         <title>{`${page.title} | ${siteName}`}</title>
         <meta name="description" content={page.metaDescription} />

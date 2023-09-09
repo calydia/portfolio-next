@@ -6,8 +6,6 @@ import Breadcrumb from '../components/Breadcrumb';
 
 export default function Home({ page, courses }) {
 
-  console.log(courses);
-
   const siteName = 'Portfolio - Sanna Mäkinen';
   const items = courses.items;
 
