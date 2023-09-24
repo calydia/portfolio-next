@@ -58,8 +58,7 @@ export default function Home({ page, listing }) {
                           <span className="sr-only">on</span>
                           <span className="block text-base md:text-xl pb-4">
                             {dayjs(node.date)
-                              .format(`MMMM DD, YYYY`)}{' '}
-                            <span aria-hidden="true">|</span> <span className="sr-only">in category</span> {node.category}
+                              .format(`MMMM DD, YYYY`)}
                           </span>
                         </div>
                       </a>

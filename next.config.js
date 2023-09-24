@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['drupal.ampere.corrupted.pw'],
+    formats: ['image/avif', 'image/webp']
   },
 }
 

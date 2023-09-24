@@ -1,9 +1,13 @@
 import React from 'react'
-import { func, string } from 'prop-types';
 import { HiSun } from "react-icons/hi";
 import { HiMoon } from "react-icons/hi";
 
-const Toggle = ({theme,  toggleTheme }) => {
+interface Types {
+  theme: string | (() => void),
+  toggleTheme: () => void
+}
+
+const Toggle = ({theme,  toggleTheme }: Types) => {
     return (
       <button onClick={toggleTheme} className="float-right lg:absolute lg:right-0 lg:top-0 py-2 px-3 lg:py-4 lg:px-6 text-black dark:text-white border-y-4 border-transparent
       hover:border-y-4 hover:border-lt-purple dark:hover:border-dk-blue-light
@@ -15,8 +19,5 @@ const Toggle = ({theme,  toggleTheme }) => {
       </button>
     );
 };
-Toggle.propTypes = {
-    theme: string.isRequired,
-    toggleTheme: func.isRequired,
-}
+
 export default Toggle;

@@ -28,8 +28,8 @@ module.exports = {
         'dk-code-border': '#18399a'
       },
       fontFamily: {
-        'title': 'Rock Salt, cursive',
-        'sans': 'Average Sans, Arial, sans-serif',
+        'title': ['var(--font-rock-salt)', 'cursive'],
+        'sans': ['var(--font-average-sans)', 'Arial', 'sans-serif'],
       },
       outlineOffset: {
         15: '15px',
