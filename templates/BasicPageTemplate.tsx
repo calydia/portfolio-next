@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Breadcrumb from '../components/Breadcrumb';
+import { PageInterface } from '@/interfaces/pageInterface';
 
-export default function BasicPageTemplate({ page }) {
+export default function BasicPageTemplate({ page }: PageInterface) {
 
   const siteName = 'Portfolio - Sanna Mäkinen';
 
