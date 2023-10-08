@@ -149,6 +149,14 @@ p {
   background-size: auto 55px;
 }
 
+.logo--astro a {
+  background-image: url('/logos/astro.svg');
+  background-size: auto 50px;
+}
+.logo--astro a:hover {
+  background-size: auto 55px;
+}
+
 .logo--gatsby a {
   background-image: url('/logos/gatsby.svg');
 }
